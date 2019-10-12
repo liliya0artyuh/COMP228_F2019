@@ -1,4 +1,4 @@
-package week_5_polymorphism;
+package abstract_things;
 
 import java.util.ArrayList;
 

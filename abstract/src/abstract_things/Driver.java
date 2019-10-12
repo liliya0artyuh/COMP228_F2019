@@ -1,4 +1,4 @@
-package week_5_polymorphism;
+package abstract_things;
 
 import java.util.ArrayList;
 
@@ -19,15 +19,18 @@ public class Driver {
 		ArrayList<Animal> animalsCollection = new ArrayList<Animal>();
 		
 		Bird bird = new Bird();
-		Animal animal = new Animal();
+		//Animal animal = new Bird();
+		
+		Frog frog = new Frog();
 		
 		animalsCollection.add(dog);
 		animalsCollection.add(fish);
 		animalsCollection.add(bird);
-		animalsCollection.add(animal);
+		//animalsCollection.add(animal);
+		animalsCollection.add(frog);
 		
 		MovementService.makeItMove(animalsCollection);
-		
+		System.out.println(Animal.SUPERCLASS);
 		
 	}
 
