@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ListviewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <HBox layoutX="0.0" layoutY="0.0" prefHeight="208.0" prefWidth="536.0">
+      <children>
+        <ListView fx:id="monthsListView" prefHeight="198.0" prefWidth="146.0">
+          <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+          </HBox.margin>
+        </ListView>
+        <ListView fx:id="daysList" prefHeight="198.0" prefWidth="154.0" HBox.margin="$x1">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Monday" />
+              <String fx:value="Tuesday" />
+              <String fx:value="Wednesday" />
+              <String fx:value="Thursday" />
+              <String fx:value="Friday" />
+              <String fx:value="Saturday" />
+              <String fx:value="Sunday" />
+            </FXCollections>
+          </items>
+        </ListView>
+        <VBox alignment="TOP_CENTER" prefHeight="198.0" prefWidth="197.0" HBox.margin="$x1">
+          <children>
+            <Button fx:id="btnShow" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleShowButtonEvend" text="Button" textAlignment="CENTER" />
+            <Label fx:id="lblSelectedDay" prefWidth="184.0" text="Label" VBox.vgrow="NEVER" />
+            <Label fx:id="lblSelectedMonth" prefWidth="184.0" text="Label" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
