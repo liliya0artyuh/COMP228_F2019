@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="db_javafx.SearchController">
+   <children>
+      <Pane prefHeight="313.0" prefWidth="393.0">
+         <children>
+            <Button layoutX="293.0" layoutY="51.0" mnemonicParsing="false" onAction="#findButtonAction" text="Find" />
+            <TextField fx:id="tfFind" layoutX="56.0" layoutY="51.0" />
+            <TextArea fx:id="taInfo" layoutX="14.0" layoutY="145.0" prefHeight="141.0" prefWidth="363.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
